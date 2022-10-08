@@ -7,7 +7,7 @@ const DetailForm = (form, id) => {
         <p>Titular de compra: {form.name}</p>
         <p>Telefono de contacto: {form.phone}</p>
         <p>Correo electronico: {form.email}</p>
-        <p>el numero de pedido es : {id} </p>
+        <p>Tu numero de pedido es : {id} </p>
     </div>
     )
     }

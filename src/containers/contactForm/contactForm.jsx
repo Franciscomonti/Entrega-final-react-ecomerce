@@ -50,33 +50,36 @@ const ContactForm = () => {
     return (
         <div>
             { loadSpin ? 
+            
                 <LoadSpinner texto="estamos procesando tu compra"/>
 
-            :   typeof id !== 'undefined' ? (vaciarCarrito(), <BuyDetails newOrderInfo = {newOrderInfo} id= {id} />)
+                :   typeof id !== 'undefined' ? 
+            
+                    (vaciarCarrito(), <BuyDetails newOrderInfo = {newOrderInfo} id= {id} />)
 
-            :   <form onSubmit={submitHandler} className="formulario_compra_blq">
-                    <div className="formulario_compra_card">
-                        <label htmlFor="name" className="formulario_compra_label">Nombre: </label>
-                        <input autoFocus="true" type="text" name="name" id="name" placeholder="Francisco Monti" onChange={changeHandler} value={userFormData.name} className="formulario_compra_input" required/>
-                    </div>
+                    :   <form onSubmit={submitHandler} className="formulario_compra_blq">
+                            <div className="formulario_compra_card">
+                                <label htmlFor="name" className="formulario_compra_label">Nombre: </label>
+                                <input autoFocus="true" type="text" name="name" id="name" placeholder="Francisco Monti" onChange={changeHandler} value={userFormData.name} className="formulario_compra_input" required/>
+                            </div>
 
-                    <div className="formulario_compra_card">
-                        <label htmlFor="email" className="formulario_compra_label">Email: </label>
-                        <input type="email" name="email" id="email" placeholder="franciscomonti@gmail.com" onChange={changeHandler} value={userFormData.email} className="formulario_compra_input" required/>
-                    </div>
+                            <div className="formulario_compra_card">
+                                <label htmlFor="email" className="formulario_compra_label">Email: </label>
+                                <input type="email" name="email" id="email" placeholder="franciscomonti@gmail.com" onChange={changeHandler} value={userFormData.email} className="formulario_compra_input" required/>
+                            </div>
 
-                    <div className="formulario_compra_card">
-                        <label htmlFor="phone" className="formulario_compra_label">Telefono: </label>
-                        <input type="tel" name="phone" id="phone" placeholder="### - #######" onChange={changeHandler} value={userFormData.phone} className="formulario_compra_input" required/>
-                    </div>
+                            <div className="formulario_compra_card">
+                                <label htmlFor="phone" className="formulario_compra_label">Telefono: </label>
+                                <input type="tel" name="phone" id="phone" placeholder="### - #######" onChange={changeHandler} value={userFormData.phone} className="formulario_compra_input" required/>
+                            </div>
 
-                    <div className="formulario_compra_card">
-                        <label htmlFor="address" className="formulario_compra_label">Direccion: </label>
-                        <input type="text" name="address" id="address" placeholder="Siempreviva 742 " onChange={changeHandler} value={userFormData.address} className="formulario_compra_input" required/>
-                    </div>
+                            <div className="formulario_compra_card">
+                                <label htmlFor="address" className="formulario_compra_label">Direccion: </label>
+                                <input type="text" name="address" id="address" placeholder="Siempreviva 742 " onChange={changeHandler} value={userFormData.address} className="formulario_compra_input" required/>
+                            </div>
 
-                    <button className="formulario_compra_btn">Comprar</button>
-                </form>
+                            <button className="formulario_compra_btn">Comprar</button>
+                        </form>
             }
         </div>
     )
