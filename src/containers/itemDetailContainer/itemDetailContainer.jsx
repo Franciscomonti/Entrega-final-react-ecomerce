@@ -7,31 +7,33 @@ import LoadSpinner from '../../components/loadSpinner/loadSpinner';
 
 const ItemDetailContainer = () => {
 
-    const [Item, setItem ] = useState()
-    const [loadSpin, setLoadSpin] = useState(false)
-    const {idProducto} = useParams()
+    const [Item, setItem ] = useState();
+    const [loadSpin, setLoadSpin] = useState(false);
+    const {idProducto} = useParams();
 
     useEffect(() =>{
-        
             const db = getFirestore();
             const itemRef = doc(db, 'productos', idProducto);
+
             getDoc(itemRef).then((snapshot) => {
-
-            const producto = {id: snapshot.id, ...snapshot.data()};
-
+                const producto = {id: snapshot.id, ...snapshot.data()};
                 setItem(producto)
                 setLoadSpin(true)
-            })
+            });
         
-    }, [idProducto])
+    }, [idProducto]);
 
 
 
-return <>{loadSpin ? <ItemDetail producto={Item} key={Item.id} /> : <LoadSpinner texto="cargando los detalles del producto"/>
+return (
+        <>
+            { 
+            loadSpin ? <ItemDetail producto={Item} key={Item.id} /> 
+            : <LoadSpinner texto="cargando los detalles del producto"/>
+            } 
+        </>
+    );
+};
 
-} </>
 
-}
-
-
-export default ItemDetailContainer
+export default ItemDetailContainer;
