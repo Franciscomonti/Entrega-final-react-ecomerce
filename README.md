@@ -22,10 +22,12 @@ Al finalizar la compra se envia los datos de la compra a firebase y se muestra e
 
 # Importante 
 ### *Utilizacion de proyecto:*
-*Descargar el repositorio en la computadora*
-*Abrir el proyecto en Visual Studio Code*
+*-Descargar el repositorio en la computadora*
+
+*-Abrir el proyecto en Visual Studio Code*
 
 *-Para instalar las dependencias necesarias tipear en la terminal npm install*
+
 *-Para correr el proyecto tipear en la terminal npm start*
 
 *Muchas Gracias !*
