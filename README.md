@@ -1,6 +1,6 @@
-# **Easy to Shop - Comercio electronico - React.js **
-# ** Curso de React Js de CoderHouse **
-### ** Desarrollado por Monti Francisco Javier **
+# Easy to Shop - Comercio electronico - React.js 
+# Curso de React Js de CoderHouse 
+### Desarrollado por Monti Francisco Javier 
 
 # *Informacion del Proyecto:*
 
@@ -21,13 +21,12 @@ Una vez cargado el carrito se puede continuar la compra llenando un formulario d
 Al finalizar la compra se envia los datos de la compra a firebase y se muestra el id de la compra.
 
 # Importante 
-### Utilizacion de proyecto:
+### *Utilizacion de proyecto:*
+*Descargar el repositorio en la computadora*
+*Abrir el proyecto en Visual Studio Code*
 
-Descargar el repositorio en la computadora
-Abrir el proyecto en Visual Studio Code
+*-Para instalar las dependencias necesarias tipear en la terminal npm install*
+*-Para correr el proyecto tipear en la terminal npm start*
 
--Para instalar las dependencias necesarias tipear en la terminal npm install
--Para correr el proyecto tipear en la terminal npm start
-
-Muchas Gracias !
+*Muchas Gracias !*
 
